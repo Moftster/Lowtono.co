@@ -2,9 +2,9 @@
 
 // PDO connection
 
-$dbServername = "127.0.0.1";
-$dbUsername = "root";
-$dbPassword = "";
+$dbServername = "us-cdbr-iron-east-02.cleardb.net";
+$dbUsername = "b28e4ead2d474b";
+$dbPassword = "0fb86246";
 $dbName = "lowtono";
 
 try {
