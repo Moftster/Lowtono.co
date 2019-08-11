@@ -1,0 +1,60 @@
+
+
+.starrating > input {display: none;}  /* Remove radio buttons */
+
+.starrating > label:before {
+  content: "\f005"; /* Star */
+  margin: 2px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.starrating > label
+{
+  color: #AFAFAF; /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+
+.reviewLabel {
+  text-align: center;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  width: 300px;
+}
+
+.card-img-top {
+    height: 35vh;
+    object-fit: contain;
+}
+
+.bottom-margin {
+   margin-bottom: 10px;
+ }
+
+ .bottom-margin-20 {
+    margin-bottom: 20px;
+  }
+
+ .nav-logo {
+     height: 5vh;
+ }
+
+ .jumbotron {
+   background-image: url(/documents/images/banner2-5.jpg);
+   object-fit: contain;
+ }
+
+ .card:hover {
+   opacity: 0.7;
+ }
