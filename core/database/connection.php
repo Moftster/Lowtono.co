@@ -2,10 +2,17 @@
 
 // PDO connection
 
-$dbServername = "us-cdbr-iron-east-02.cleardb.net";
-$dbUsername = "b28e4ead2d474b";
-$dbPassword = "0fb86246";
-$dbName = "lowtono";
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$dbServername = $url["host"];
+$dbUsername = $url["user"];
+$dbPassword = $url["pass"];
+$dbName = substr($url["path"], 1);
+
+// $dbServername = "us-cdbr-iron-east-02.cleardb.net";
+// $dbUsername = "b28e4ead2d474b";
+// $dbPassword = "0fb86246";
+// $dbName = "lowtono";
 
 try {
 
