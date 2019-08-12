@@ -4,7 +4,7 @@
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$dbServername = $url["host"];
+$dbServername = $url["rrrhost"];
 $dbUsername = $url["user"];
 $dbPassword = $url["pass"];
 $dbName = substr($url["path"], 1);
