@@ -25,7 +25,9 @@ if(isset($_POST['submit'])){
 
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
 
-    echo "Mail sent. Thank you " . $name . ", we will contact you shortly.";
+    $message = "Thank you " . $name . ", we will contact you shortly.";
+
+    header("location:/contact.php?msg=".$message);
 
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 

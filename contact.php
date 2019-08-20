@@ -5,6 +5,13 @@
 
 	<h2 class="display-4 bottom-margin-20">Contact</h2>
 
+	<?php if(isset($_GET['msg']))
+
+		echo "<p class='text-danger'>" . $_GET['msg'] . "</p>";
+
+		?>
+
+
           <form class="form-horizontal" action="/core/database/contact.php" method="post">
           <fieldset>
             <!-- Name input-->
