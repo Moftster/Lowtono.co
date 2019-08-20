@@ -8,10 +8,10 @@ $dbServername = $url["host"];
 $dbUsername = $url["user"];
 $dbPassword = $url["pass"];
 $dbName = "heroku_75a209a499a855d";
-
-// GRANT ALL PRIVILEGES ON 0fb86246.table TO 'user'@'localhost';
-
-
+//
+// // GRANT ALL PRIVILEGES ON 0fb86246.table TO 'user'@'localhost';
+// 
+//
 // $dbServername = "us-cdbr-iron-east-02.cleardb.net";
 // $dbUsername = "b28e4ead2d474b";
 // $dbPassword = "0fb86246";
