@@ -7,7 +7,7 @@
 
 	<?php if(isset($_GET['msg']))
 
-		echo "<p class='text-danger'>" . $_GET['msg'] . "</p>";
+		echo "<p class='text-success'>" . $_GET['msg'] . "</p>";
 
 		?>
 
