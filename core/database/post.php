@@ -68,15 +68,10 @@ if(!in_array($ext, $allowed)) {
 
 move_uploaded_file( $_FILES['Image']['tmp_name'], $path);
 
-// $sth = $conn->prepare("INSERT INTO lowtono.reviews(`ProductImage`) VALUES (:Image)");
-//
-// $sth->bindParam(':Image', $image);
-//
-// $sth->execute();
 
 }
 
-  $PDOQuery = "INSERT INTO lowtono.reviews(`ProductName`, `ProductReview`, `ProductRating`, `ProductAlcohol`, `GlutenFree`, `DairyFree`, `ProductImage`, `posterID` ) VALUES (:ProductName, :Review, :rating, :Alcohol, :glutenFree, :dairyFree, :Image, :posterID)";
+  $PDOQuery = "INSERT INTO heroku_75a209a499a855d.reviews(`ProductName`, `ProductReview`, `ProductRating`, `ProductAlcohol`, `GlutenFree`, `DairyFree`, `ProductImage`, `posterID` ) VALUES (:ProductName, :Review, :rating, :Alcohol, :glutenFree, :dairyFree, :Image, :posterID)";
 
   $PDOPrepare = $conn->prepare($PDOQuery);
 

@@ -10,7 +10,7 @@ if(isset($_POST['delete']))
 
       $id= $_POST['PostID'];
 
-      $statement = $conn->prepare("DELETE FROM lowtono.reviews WHERE ProductID = '$id'");
+      $statement = $conn->prepare("DELETE FROM heroku_75a209a499a855d.reviews WHERE ProductID = '$id'");
 
       $execute = $statement->execute();
 

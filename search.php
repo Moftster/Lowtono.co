@@ -20,7 +20,7 @@ try {
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT * FROM lowtono.reviews WHERE ProductName LIKE '%$search%' OR ProductReview LIKE '%$search%'");
+    $stmt = $conn->prepare("SELECT * FROM heroku_75a209a499a855d.reviews WHERE ProductName LIKE '%$search%' OR ProductReview LIKE '%$search%'");
 
     $stmt->execute();
 

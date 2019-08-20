@@ -23,7 +23,7 @@ if(empty($UserName && $Password)) {
 
   try{
 
-    $query = $conn->query("SELECT user_id, user_pwd FROM lowtono.users WHERE user_uname = '$UserName'");
+    $query = $conn->query("SELECT user_id, user_pwd FROM heroku_75a209a499a855d.users WHERE user_uname = '$UserName'");
 
     if($query->rowCount() > 0) {
 

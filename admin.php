@@ -40,7 +40,7 @@ $uName = $_SESSION['UserName'];
 try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT * FROM lowtono.reviews WHERE posterID = '$uName'");
+    $stmt = $conn->prepare("SELECT * FROM heroku_75a209a499a855d.reviews WHERE posterID = '$uName'");
 
     $stmt->execute();
 
