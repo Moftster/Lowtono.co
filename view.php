@@ -40,11 +40,18 @@ $id = $_GET['id'];
 
     <h1><?= $Post->ProductName ?></h1>
 
-    <p> Reviewed by <?=$Post->posterID?> on <?=$Post->postDateTime?> </p>
+    <p> Reviewed by <?=$Post->posterID?> on <?php
+
+                                              $dateInTimestampForm = strtotime($Post->postDateTime);
+                                              $newDate = date('l jS F Y', $dateInTimestampForm);
+                                              echo $newDate;
+                                              // $new_date = date('Y-m-d H:i:s', $dateInTimestampForm);
+                                              // echo $new_date;
+    ?> </p>
 
     <p> <?php echo nl2br($Post->ProductReview) ?> </p>
 
-    <h5 style="text-align: center"> Overall score: <?= $Post->ProductRating ?> /10</h5>
+    <h5 style="text-align: center"> Overall score: <?= $Post->ProductRating ?>/10</h5>
 
     <h6>Additional information</h6>
 
