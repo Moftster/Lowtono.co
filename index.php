@@ -9,7 +9,7 @@ include('core/database/connection.php');
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Lowtono.co</h1>
-    <p class="lead">The low and no alcohol review site</p>
+    <p class="lead">Low and no alcohol reviews</p>
   </div>
 </div>
 
