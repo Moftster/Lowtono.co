@@ -5,14 +5,14 @@
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 // Local host code
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
+// $dbServername = "localhost";
+// $dbUsername = "root";
+// $dbPassword = "";
 
 // Production code
-// $dbServername = $url["host"];
-// $dbUsername = $url["user"];
-// $dbPassword = $url["pass"];
+$dbServername = $url["host"];
+$dbUsername = $url["user"];
+$dbPassword = $url["pass"];
 $dbName = "heroku_75a209a499a855d";
 
 // $dbName = substr($url["path"], 1);
