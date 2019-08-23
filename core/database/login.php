@@ -37,13 +37,13 @@ if(empty($UserName && $Password)) {
 
           header("location:/index.php");
 
-      } else {
-
-          $message = "Username/password not recognised";
-
-          header("location:/login.php?msg=".$message);
-
       }
+
+    } else {
+
+        $message = "Username/password not recognised";
+
+        header("location:/login.php?msg=".$message);
 
     }
 
