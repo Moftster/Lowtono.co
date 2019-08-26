@@ -16,6 +16,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <script src="https://kit.fontawesome.com/9ccdbad9ac.js"></script>
+
 
     <link rel="shortcut icon" href="documents/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="document/images/favicon.ico" type="image/x-icon">
@@ -94,17 +96,26 @@
     </ul>
 
 
+        <form action="search.php" method="POST" class="form-inline my-2 my-lg-0">
 
+          <div class="input-group md-form form-sm form-2 pl-0">
+
+              <div class="input-group-append">
+
+                <span class="input-group-text"><input class="form-control mr-sm-2" type="search" name="searchText" aria-label="Search"><button name="searching" class="btn fas fa-search" type="submit"></button></span>
+
+              </div>
+          </div>
+
+        </form>
 
       </div>
 
-    <form action="search.php" method="POST" class="form-inline my-2 my-lg-0">
 
-      <input class="form-control mr-sm-2" type="search" name="searchText" aria-label="Search">
+      <!-- <input class="form-control mr-sm-2" type="search" name="searchText" aria-label="Search"> -->
 
-      <button name="searching" class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      <!-- <button name="searching" class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button> -->
 
-    </form>
 
 
 </nav>
