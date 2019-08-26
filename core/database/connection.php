@@ -4,7 +4,7 @@
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-Local host code
+// Local host code
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";

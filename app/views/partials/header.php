@@ -100,7 +100,7 @@
 
     <form action="search.php" method="POST" class="form-inline my-2 my-lg-0">
 
-      <input class="form-control mr-sm-2" type="search" name="searchText" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" name="searchText" aria-label="Search">
 
       <button name="searching" class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
 
