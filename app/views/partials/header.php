@@ -2,9 +2,7 @@
 
 <?php
 
-include('core/database/connection.php') 
-
-require('vendor/autoload.php');
+include('core/database/connection.php')
 
 ?>
 
