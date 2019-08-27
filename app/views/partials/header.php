@@ -1,6 +1,12 @@
 <!doctype html>
 
-<?php include('core/database/connection.php') ?>
+<?php
+
+include('core/database/connection.php') 
+
+require('vendor/autoload.php');
+
+?>
 
 <html lang="en">
 
