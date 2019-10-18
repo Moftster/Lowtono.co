@@ -33,6 +33,10 @@
   width: 300px;
 }
 
+.card {
+  margin-bottom: 10%;
+}
+
 .card-img-top {
     height: 35vh;
     object-fit: contain;
