@@ -1,5 +1,3 @@
-<!doctype html>
-
 <?php
 
 session_start();
@@ -7,6 +5,8 @@ session_start();
 include('core/database/connection.php')
 
 ?>
+
+<!doctype html>
 
 <html lang="en">
 
