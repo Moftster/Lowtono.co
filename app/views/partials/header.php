@@ -2,6 +2,8 @@
 
 <?php
 
+session_start();
+
 include('core/database/connection.php')
 
 ?>
@@ -60,8 +62,6 @@ include('core/database/connection.php')
       </li>
 
       <?php
-
-      session_start();
 
       if(isset($_SESSION['UserName'])) { ?>
 
