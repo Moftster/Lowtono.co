@@ -21,7 +21,7 @@ include('core/database/connection.php');
 try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT ProductID, ProductImage, ProductName, ProductReview, ProductRating FROM heroku_75a209a499a855d.reviews");
+    $stmt = $conn->prepare("SELECT ProductID, ProductImage, ProductName, ProductReview, ProductRating FROM chillawe_lowtono.reviews");
 
     $stmt->execute();
 

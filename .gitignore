@@ -5,3 +5,7 @@
 /API
 
 /vendor
+
+/core
+core/database/connection.php
+core/database/connection.php

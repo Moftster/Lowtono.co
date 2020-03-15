@@ -15,7 +15,7 @@ $id = $_GET['id'];
  try {
      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-     $stmt = $conn->prepare("SELECT * FROM heroku_75a209a499a855d.reviews WHERE ProductID = '$id'");
+     $stmt = $conn->prepare("SELECT * FROM chillawe_lowtono.reviews WHERE ProductID = '$id'");
 
      $stmt->execute();
 

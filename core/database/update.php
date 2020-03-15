@@ -74,7 +74,7 @@ move_uploaded_file( $_FILES['Image']['tmp_name'], $path);
 
 }
 
-  $PDOQuery = "UPDATE heroku_75a209a499a855d.reviews SET `ProductName` = :ProductName,
+  $PDOQuery = "UPDATE chillawe_lowtono.reviews SET `ProductName` = :ProductName,
                                           `ProductReview` = :Review,
                                           `ProductRating` = :rating,
                                           `ProductAlcohol` = :Alcohol,

@@ -71,7 +71,7 @@ move_uploaded_file( $_FILES['Image']['tmp_name'], $path);
 
 }
 
-  $PDOQuery = "INSERT INTO heroku_75a209a499a855d.reviews(`ProductName`, `ProductReview`, `ProductRating`, `ProductAlcohol`, `GlutenFree`, `DairyFree`, `ProductImage`, `posterID` ) VALUES (:ProductName, :Review, :rating, :Alcohol, :glutenFree, :dairyFree, :Image, :posterID)";
+  $PDOQuery = "INSERT INTO chillawe_lowtono.reviews(`ProductName`, `ProductReview`, `ProductRating`, `ProductAlcohol`, `GlutenFree`, `DairyFree`, `ProductImage`, `posterID` ) VALUES (:ProductName, :Review, :rating, :Alcohol, :glutenFree, :dairyFree, :Image, :posterID)";
 
   $PDOPrepare = $conn->prepare($PDOQuery);
 

@@ -20,7 +20,7 @@ if(empty($firstName && $lastName && $Email && $UserName && $Password)) {
 
 } else {
 
-$existingEmail = $conn->prepare("SELECT user_email FROM heroku_75a209a499a855d.users WHERE ? = user_email");
+$existingEmail = $conn->prepare("SELECT user_email FROM chillawe_lowtono.users WHERE ? = user_email");
 
 $params = array($_POST['Email']);
 
@@ -32,7 +32,7 @@ if($existingEmail->rowCount() > 0) {
 
 } else {
 
-$existingUser = $conn->prepare("SELECT user_uname FROM heroku_75a209a499a855d.users WHERE ? = user_uname");
+$existingUser = $conn->prepare("SELECT user_uname FROM chillawe_lowtono.users WHERE ? = user_uname");
 
 $params = array($_POST['UserName']);
 
@@ -44,7 +44,7 @@ if($existingUser->rowCount() > 0) {
 
 } else {
 
-$PDOQuery = "INSERT INTO heroku_75a209a499a855d.users(`user_first`, `user_last`, `user_email`, `user_uname`, `user_pwd`) VALUES (:FirstName, :LastName, :Email, :UserName, :Password)";
+$PDOQuery = "INSERT INTO chillawe_lowtono.users(`user_first`, `user_last`, `user_email`, `user_uname`, `user_pwd`) VALUES (:FirstName, :LastName, :Email, :UserName, :Password)";
 
 $PDOResult = $conn->prepare($PDOQuery);
 
